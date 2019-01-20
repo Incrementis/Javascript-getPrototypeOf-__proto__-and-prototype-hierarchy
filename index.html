@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>Get Prototype</title>
+		<meta charset = "UTF-8">
+	
+	</head>
+	
+	
+<!--
+		NOTE:
+		===============================================================================================
+		
+		Because of simplicity & demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling.
+		
+		Some attributes in some tags are put into new lines, to improve the readability.
+		
+		The "name" attribute on img tags is used to identify the name of the image file.
+		It contains only the file name and type. 
+		No file path needed.
+		If there should be more then one image within a table cell then the file names must be seperated by space!
+
+		Also some cells own an id which identifies in which cells images will be changed with other ones by clicking on it.
+		
+		===============================================================================================
+-->
+
+
+
+	<body style="text-align:center; margin-left: auto; margin-right:auto;">
+	
+		<section>
+			
+			<h2>Diagram</h2>
+			
+			<table align="center" style="margin-top: 50px; border-spacing: 0px;">
+
+				<!--1.ROW-->
+				<tr>
+					
+					<td >
+					
+						<img 	class="table-position" 
+								name="Empty.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+					
+						<img 	class="table-position" 
+								name="Empty.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+					
+						<img 	class="table-position" 
+								name="InheritanceLeft.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+					
+						<img 	class="table-position" 
+								name="GlobalObject.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+								
+					</td>
+
+					
+					<td >
+					
+						<img 	class="table-position" 
+								name="Empty.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+				
+				</tr>
+
+				<!--2.ROW-->
+				<tr>
+					
+					<td >
+					
+						<img 	class="table-position" 
+								name="Empty.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+					
+						<img 	class="table-position" 
+								name="InheritanceLeft.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td id="2 3 7 9" onclick="	highlighting(this); 
+												Flag.settingTo('God.png'); 
+												WebInterface(false, false);">
+					
+						<img 	class="table-position" 
+								name="God.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+						<img 	class="table-position" 
+								name="InheritanceRight.png PrototypeTop.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+						<img 	class="table-position" 
+								name="Empty.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+				</tr>
+
+				<!--3.ROW-->
+				<tr>
+					
+					<td >
+						<img 	class="table-position" 
+								name="InheritanceLeft.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td id="2 3 6 7 9 12 14" onclick="	highlighting(this); 
+														Flag.settingTo('Angel.png'); 
+														WebInterface(false, false);">
+					
+						<img 	class="table-position" 
+								name="Angel.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+						<img 	class="table-position" 
+								name="PrototypeMiddleRight.png PrototypeMiddleLeft.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td id="2 3 7 8 9 13 15" onclick="	highlighting(this);
+														Flag.settingTo('Devil.png') 
+														WebInterface(false, false);">
+					
+						<img 	class="table-position" 
+								name="Devil.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+						<img 	class="table-position" 
+								name="InheritanceRight.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+				</tr>
+
+				<!--4.ROW-->
+				<tr>
+					
+					<td id="2 3 6 7 9 11 12 14 17 18" onclick="	highlighting(this);
+																Flag.settingTo('GoodHuman.png');
+																WebInterface(false, false);">
+					
+						<img 	class="table-position" 
+								name="GoodHuman.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+						<img 	class="table-position" 
+								name="PrototypeLeft.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+						<img 	class="table-position" 
+								name="Empty.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td >
+						<img 	class="table-position" 
+								name="PrototypeRight.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+					
+					<td id="2 3 7 8 9 13 15 16 20 21" onclick="	highlighting(this);
+																Flag.settingTo('BadHuman.png');
+																WebInterface(false, false);">
+					
+						<img 	class="table-position" 
+								name="BadHuman.png" 
+								width="100px" 
+								height="100px" 
+								alt="No image!">
+					</td>
+
+				</tr>
+
+			</table>
+			
+			
+		</section>
+		
+		
+		<br>
+		<br>
+		<br>
+		<section style="width: 50%; margin-left: auto; margin-right: auto;">
+			
+			<button type="button" onclick="WebInterface(true, false);"><---COPY---></button>
+			<button type="button" onclick="WebInterface(false, true);"><---BUFFER---></button>
+
+
+			<div style="border: 2px solid black; background: rgb(60, 179, 113);">
+				
+				<h3>Main Interface</h3>
+				
+				<p><b>Instance name(Identity): 	</b><span class="main-content">------</span></p> 	
+				<p><b>Instance Of: 				</b><span class="main-content">------</span></p> 	
+				<p><b>Properties: 				</b><span class="main-content">------</span></p> 				
+				<p><b>Prototype Of: 			</b><span class="main-content">------</span></p> 	
+				<p><b>Prototype Chain: 			</b><span class="main-content">------</span></p> 
+
+				
+			</div>
+			
+			
+			
+			
+			<div style="border: 2px solid black; background: rgb(131, 111, 0);">
+				
+				<h3>Sub Interface</h3>
+				
+				<p><b>Instance name(Identity): 		</b><span class="buffer-content">------</span></p> 	
+				<p><b>Instance Of: 					</b><span class="buffer-content">------</span></p> 	
+				<p><b>Properties: 					</b><span class="buffer-content">------</span></p> 		
+				<p><b>Prototype Of: 				</b><span class="buffer-content">------</span></p> 	
+				<p><b>Prototype Chain: 				</b><span class="buffer-content">------</span></p> 
+				
+			</div>
+		
+		</section>
+		
+		
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<section>
+			
+			<hr width="75%">
+		
+			<br>
+			<br>
+			For more explanation please visit - 
+			<a href = "https://github.com/Incrementis/Javascript-variable-hoisting-/wiki"> 
+			Hoisting Wiki</a>
+			
+		</section>
+		
+
+	</body>
+
+	
+	
+	<footer>
+	
+		<script language = "javascript" type = "text/javascript" src = "vs.js"></script>
+	
+	</footer>
+	 
+
+</html>
