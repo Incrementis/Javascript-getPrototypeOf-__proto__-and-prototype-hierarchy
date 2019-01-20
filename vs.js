@@ -18,13 +18,13 @@
 ==================================
 	STRUCTURE:
 	
-				God
-				 |
-				 /\
-				/  \
-		   Angel  Devil
-			  |     |
-		GoodHuman  BadHuman
+		God
+		 |
+		 /\
+		/  \
+	    Angel  Devil
+	       |     |
+	GoodHuman  BadHuman
 ==================================
 */
 
@@ -94,7 +94,7 @@ function BadHuman(name)
 //	==================
 
 Angel.prototype = Object.create(God.prototype); //Allows the access to method "isHoly" from God
-Angel.prototype.constructor = Angel; 			//Sets the constructor to "Angel" which is here not necessarily needed
+Angel.prototype.constructor = Angel; 		//Sets the constructor to "Angel" which is here not necessarily needed
 
 
 
@@ -134,14 +134,14 @@ God.prototype.createsClone = function()
 //	=========
 
 var Hannibal_Lecter 	= new BadHuman	("Hannibal_Lecter");
-var Santa_Claus 		= new GoodHuman	("Santa_Claus");
-var Dead_Son_Goku 		= new Angel		("Dead_Son_Goku");
-var Shinigami 			= new Devil		("Shinigami");
-var Zeus				= new God		("Zeus");
+var Santa_Claus 	= new GoodHuman	("Santa_Claus");
+var Dead_Son_Goku 	= new Angel		("Dead_Son_Goku");
+var Shinigami 		= new Devil		("Shinigami");
+var Zeus		= new God		("Zeus");
 
 
 //Instance of a global object!
-var Global_Object 		= new Object();
+var Global_Object 	= new Object();
 
 
 
@@ -227,12 +227,12 @@ function initTable()
 		16 17 18 19 20
 	*/
 	var positions 	= document.getElementsByClassName('table-position');
-	var cells		= document.getElementsByTagName('TD'); 
+	var cells	= document.getElementsByTagName('TD'); 
 	var maxNumOfPos = cells.length;
-	var picID		= 0;
+	var picID	= 0;
 	var pictures	= 0;
-	var clone		= 0;
-	var normal 		= "images/normal/";
+	var clone	= 0;
+	var normal 	= "images/normal/";
 	
 	
 	//TODO: Every cell has an array which conatains
@@ -250,10 +250,10 @@ function initTable()
 		if(pictures.length > 1)
 		{
 			//Preparing style attributes to overlapp pictures
-			cells[num].style.position 			= "relative"; 	//TD
-			positions[picID].style.position 	= "absolute";	//IMG
-			positions[picID].style.top 			= "0";			//IMG
-			positions[picID].style.right 		= "0";			//IMG
+			cells[num].style.position 	= "relative"; 	//TD
+			positions[picID].style.position = "absolute";	//IMG
+			positions[picID].style.top 	= "0";		//IMG
+			positions[picID].style.right 	= "0";		//IMG
 		
 
 			//Copying/cloning the actual <img> tag
@@ -317,9 +317,9 @@ function highlighting(img)
 {
 	var positions 	= document.getElementsByClassName('table-position');
 	var coloured 	= "images/coloured/";
-	var normal 		= "images/normal/";
+	var normal 	= "images/normal/";
 	var pictureIDs	= [];
-	var picture		= 0;		
+	var picture	= 0;		
 	
 	
 	//Getting connected picture IDs
