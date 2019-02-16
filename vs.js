@@ -93,8 +93,8 @@ function BadHuman(name)
 //	Prototype Chaining
 //	==================
 
-Angel.prototype = Object.create(God.prototype); //Allows the access to method "isHoly" from God
-Angel.prototype.constructor = Angel; 		//Sets the constructor to "Angel" which is here not necessarily needed
+Angel.prototype = Object.create(God.prototype); 
+Angel.prototype.constructor = Angel; 		
 
 
 
@@ -135,9 +135,9 @@ God.prototype.createsClone = function()
 
 var Hannibal_Lecter 	= new BadHuman	("Hannibal_Lecter");
 var Santa_Claus 	= new GoodHuman	("Santa_Claus");
-var Dead_Son_Goku 	= new Angel		("Dead_Son_Goku");
-var Shinigami 		= new Devil		("Shinigami");
-var Zeus		= new God		("Zeus");
+var Dead_Son_Goku 	= new Angel	("Dead_Son_Goku");
+var Shinigami 		= new Devil	("Shinigami");
+var Zeus		= new God	("Zeus");
 
 
 //Instance of a global object!
