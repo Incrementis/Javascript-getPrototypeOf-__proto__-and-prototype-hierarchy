@@ -234,8 +234,6 @@ function initTable()
 	var clone	= 0;
 	var normal 	= "images/normal/";
 	
-	
-	//TODO: Every cell has an array which conatains
 
 	//Fill the table-cells with pictures
 	for(var num = 0; num < maxNumOfPos; num++, picID++)
